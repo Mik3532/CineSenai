@@ -1,0 +1,161 @@
+body {
+    background-color: gray;
+}
+
+.centered-content {
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    margin-bottom: 20px; /* Adiciona margem inferior */
+}
+
+
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center; /* centralizar o texto dentro do modal */
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cinema-seats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 50px auto; /* centralizar horizontalmente com margem superior */
+    background-color: #e0e0e0; /* cor de fundo das poltronas */
+    padding: 20px;
+    border-radius: 10px; /* bordas arredondadas */
+}
+
+.seat {
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/poltronaSenai.png);
+    background-size: cover;
+    border: 1px solid #2051ac;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.reserved {
+    background-color: #ff00008a;
+    border: 1px solid #ff00008a;
+}
+
+#btn1 {
+    border-radius: 4px;
+    background-color: #ff5858; /* cor de fundo do botão */
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 20px auto; /* centralizar horizontalmente com margem superior e inferior */
+    display: block;
+    width: fit-content;
+}
+
+#btn1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#btn1 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#btn1:hover span {
+    padding-right: 25px;
+}
+
+#btn1:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+select {
+    appearance: none;
+    border: 0;
+    box-shadow: none;
+    flex: 1;
+    padding: 0 1em;
+    color: #000000cc;
+    background-color: #ff00008a;
+    cursor: pointer;
+  }
+  
+  .filme_select::-ms-expand {
+    display: none;
+  }
+  
+  .filme_select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    border-radius: .25em;
+    overflow: hidden;
+  }
+  /* Arrow */
+  .filme_select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    background-color: rgb(66, 65, 65);
+    transition: .25s all ease;
+    pointer-events: none;
+  }
+  /* Transition */
+  .filme_select:hover::after {
+    color:#ff00008a;
+  }
+  .filme_select option {
+      background-color: #ff00008a;
+  }
+
+#centraliza{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Poltronas de Cinema</title>
+    <link rel="shortcut icon" href="../img/cinema.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/poltronas.css"> 
+</head>
+<body>
+    <div>
+        <div class="centered-content">
+            <h1>Reserva de Poltronas de Cinema</h1>
+            <label for="filme_select">Escolha o filme:</label>
+
+            <div id="centraliza">
+                <div class="filme_select">
+                    <select >
+                        <option value="filme1">INTERESTELAR</option>
+                        <option value="filme2">CHAPELZINHO VERMELHO</option>
+                        <option value="filme3">ZOOTOPIA</option>
+                        <option value="filme4">HARRY POTTER</option>
+                        <option value="filme5">50TONS DE CINZA</option>
+                        <option value="filme6">PROJETO X</option>
+                    </select>
+                </div>
+            </div>
+    
+        
+            <h2>Poltronas Disponíveis</h2>
+        </div>
+        
+        <div class="cinema-seats">
+            
+        </div>
+        <div id="btn1">
+            <button id="btn1" style="vertical-align:middle"><span> Confirmar </span></button>
+        </div>
+        
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modal-content"></p>
+            <button id="pagamento-btn">Pagar</button> 
+        </div>
+    </div>
+    
+    
+
+    <script src="../scripts/jquery-3.7.1.min.js"></script>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
