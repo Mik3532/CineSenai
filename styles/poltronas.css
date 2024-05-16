@@ -3,10 +3,9 @@ body {
 }
 
 .centered-content {
-    text-align: center; /* Centraliza o conteúdo horizontalmente */
-    margin-bottom: 20px; /* Adiciona margem inferior */
+    text-align: center;
+    margin-bottom: 20px;
 }
-
 
 #modal {
     display: none;
@@ -26,7 +25,7 @@ body {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    text-align: center; /* centralizar o texto dentro do modal */
+    text-align: center;
 }
 
 .close {
@@ -49,10 +48,10 @@ body {
     align-items: center;
     flex-wrap: wrap;
     width: 80%;
-    margin: 50px auto; /* centralizar horizontalmente com margem superior */
-    background-color: #e0e0e0; /* cor de fundo das poltronas */
+    margin: 50px auto;
+    background-color: #e0e0e0;
     padding: 20px;
-    border-radius: 10px; /* bordas arredondadas */
+    border-radius: 10px;
 }
 
 .seat {
@@ -72,7 +71,7 @@ body {
 
 #btn1 {
     border-radius: 4px;
-    background-color: #ff5858; /* cor de fundo do botão */
+    background-color: #ff5858;
     border: none;
     color: #FFFFFF;
     text-align: center;
@@ -80,10 +79,12 @@ body {
     padding: 10px 20px;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 20px auto; /* centralizar horizontalmente com margem superior e inferior */
+    margin: 20px auto;
     display: block;
     width: fit-content;
 }
+
+
 
 #btn1 span {
     cursor: pointer;
@@ -110,7 +111,6 @@ body {
     right: 0;
 }
 
-
 select {
     appearance: none;
     border: 0;
@@ -120,22 +120,22 @@ select {
     color: #000000cc;
     background-color: #ff00008a;
     cursor: pointer;
-  }
-  
-  .filme_select::-ms-expand {
+}
+
+.filme_select::-ms-expand {
     display: none;
-  }
-  
-  .filme_select {
+}
+
+.filme_select {
     position: relative;
     display: flex;
     width: 20em;
     height: 3em;
     border-radius: .25em;
     overflow: hidden;
-  }
-  /* Arrow */
-  .filme_select::after {
+}
+
+.filme_select::after {
     content: '\25BC';
     position: absolute;
     top: 0;
@@ -144,18 +144,46 @@ select {
     background-color: rgb(66, 65, 65);
     transition: .25s all ease;
     pointer-events: none;
-  }
-  /* Transition */
-  .filme_select:hover::after {
-    color:#ff00008a;
-  }
-  .filme_select option {
-      background-color: #ff00008a;
-  }
+}
 
-#centraliza{
+.filme_select:hover::after {
+    color:#ff00008a;
+}
+
+.filme_select option {
+    background-color: #ff00008a;
+}
+
+/* Table */
+#horarios {
+    text-align: center;
+    margin-top: 20px;
+}
+
+table {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color: #ff00008a;
+    color: white;
+}
+
+
+#centraliza {
     display: flex;
-    align-items: center;
     justify-content: center;
-    
+    margin-bottom: 20px;
 }
